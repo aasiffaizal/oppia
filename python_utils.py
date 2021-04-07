@@ -137,10 +137,10 @@ def url_join(base_url, relative_url):
         str. The full URL.
     """
     try:
-        import urlparse
-    except ImportError:
         import urllib.parse as urlparse
-    return urlparse.urljoin(base_url, relative_url) # pylint: disable=disallowed-function-calls
+    except ImportError:
+        import urlparse
+    return urlparse.urljoin(base_url, relative_url)
 
 
 def url_split(urlstring):
