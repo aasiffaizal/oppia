@@ -140,7 +140,7 @@ def url_join(base_url, relative_url):
         import urllib.parse as urlparse
     except ImportError:
         import urlparse
-    return urlparse.urljoin(base_url, relative_url)
+    return urlparse.urljoin(base_url, relative_url) # pylint: disable=disallowed-function-calls
 
 
 def url_split(urlstring):
