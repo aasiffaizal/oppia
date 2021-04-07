@@ -137,9 +137,9 @@ def url_join(base_url, relative_url):
         str. The full URL.
     """
     try:
-        import urllib.parse as urlparse
-    except ImportError:
         import urlparse
+    except ImportError:
+        import urllib.parse as urlparse
     return urlparse.urljoin(base_url, relative_url) # pylint: disable=disallowed-function-calls
 
 
