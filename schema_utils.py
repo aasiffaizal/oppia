@@ -69,7 +69,7 @@ def normalize_against_schema(
     """Validate the given object using the schema, normalizing if necessary.
 
     Args:
-        obj: *. The object to validate and normalize.
+        obj: *. The object to validate and normalize. Test this.
         schema: dict(str, *). The schema to validate and normalize the value
             against.
         apply_custom_validators: bool. Whether to validate the normalized
